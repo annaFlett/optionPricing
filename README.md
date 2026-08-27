@@ -1,14 +1,20 @@
-# Black Scholes Model Interactive Visulisation
+# Options Pricing Interactive Visulisation
 
+After learning about options pricing and modelling the stock market, I created a number of interactive tools to further solidify my understanding and allow myself to explore the effects changing variables has on pricing
+
+## Black Scholes Page
 After learning about the Black Scholes model, I created an interactive calculator to further solidify my understanding and allow myself to explore the effects changing variables has on options pricing.
 
 The sliders allow the user to vary parameters and see the resulting effects on the price of call and put options and the values of the Greeks. The price and the Greeks are calculated using the selected variables for both call and put options, then displayed in the table at the top.
 
-The chart section allows the user to hold all variables constant except one to explore how that variable affects pricing in isolation. The user can select which variable to vary using the drop-down menu. Two graphs, one displaying option price vs quantity being varied and the other displaying the value of a Greek vs the quantity being varied (the Greek can be selected by the user using the drop-down menu), are displayed. Examples of these graph can be seen below. The sliders can be used to change which value the other variables are held constant at.
+The chart section allows the user to hold all variables constant except one to explore how that variable affects pricing in isolation. The user can select which variable to vary using the drop-down menu (volatility, expiration date and underlying's price). Two graphs, one displaying option price vs quantity being varied and the other displaying the value of a Greek vs the quantity being varied (the Greek can be selected by the user using the drop-down menu), are displayed. Examples of these graph can be seen below. The sliders can be used to change which value the other variables are held constant at. 
 
-Varying volatility:
-![Varying Volatility](https://github.com/annaFlett/optionPricing/blob/main/images/volatility.png "Varying Volatility")
-Varying Expiration:
-![Varying Expiration](https://github.com/annaFlett/optionPricing/blob/main/images/expiration.png "Varying Expiration")
-Varying the underlying's price:
-![Varying Underlying](https://github.com/annaFlett/optionPricing/blob/main/images/underlying.png "Underlying")
+![](https://github.com/annaFlett/optionPricing/blob/main/images/volatility.png "Black Scholes Page")
+
+## Monte Carlo Page
+
+On this page, I use Geometric Brownian Motion to model the movement of stock price. From this simulation I calculate the Monte Carlo price and compare the resulting P/L with the Black-Scholes model. I provide the option to simulate the stock price under risk-neutral measure or real-world measure. The parameters for the simulation can be changed using the sliders to investigate the impact each of them have on the price path.
+
+Below I then explore the convergence of Monte Carlo price as a function of the number of simulations used to calculate it. The convergence behaviour can be investigated for different values of μ. When μ = r, the simulated stock follows the risk-neutral dynamics used in Black-Scholes pricing, and the Monte Carlo estimate converges to this price. When μ ≠ r, the Monte Carlo estimate converges to a different value because the simulation is based on the real-world measure rather than the risk-neutral measure.
+
+![](https://github.com/annaFlett/optionPricing/blob/main/images/montecarlo.png "Monte Carlo Page")
