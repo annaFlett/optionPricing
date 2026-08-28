@@ -3,13 +3,11 @@
 After learning about options pricing and modelling the stock market, I created a number of interactive tools to further solidify my understanding and allow myself to explore the effect changing variables has on pricing.
 
 ## Black Scholes Page
-After learning about the Black Scholes model, I created an interactive calculator designed to let me investigate how the pricing reacts to changes in each of the variables. 
+I created an interactive calculator for the Black Scholes model designed to let me investigate how the model reacts to changes in each of the variables. The sliders allow the user to vary parameters, which are then used to calculate the price of call and put options and the values of the Greeks. These calculated values are then displayed in the table at the top.
 
-The sliders allow the user to vary parameters and see the resulting effects on the price of call and put options and the values of the Greeks. The price and the Greeks are calculated using the selected variables for both call and put options, then displayed in the table at the top.
+The chart section allows the user to hold all variables constant except one to explore how that variable affects pricing in isolation. The user can select which variable to vary using the drop-down menu (volatility, expiration date and underlying's price). Two graphs, one displaying option price vs quantity being varied and the other displaying the value of a Greek vs the quantity being varied (the Greek can be selected by the user using the drop-down menu), are displayed. An example of these graphs can be seen below. The sliders can be used to change which value the other variables are held constant at. 
 
-The chart section allows the user to hold all variables constant except one to explore how that variable affects pricing in isolation. The user can select which variable to vary using the drop-down menu (volatility, expiration date and underlying's price). Two graphs, one displaying option price vs quantity being varied and the other displaying the value of a Greek vs the quantity being varied (the Greek can be selected by the user using the drop-down menu), are displayed. Examples of these graph can be seen below. The sliders can be used to change which value the other variables are held constant at. 
-
-![](https://github.com/annaFlett/optionPricing/blob/main/images/volatility.png "Black Scholes Page")
+![](https://github.com/annaFlett/optionPricing/blob/main/images/blackscholes.png "Black Scholes Page")
 
 ## Monte Carlo Page
 
