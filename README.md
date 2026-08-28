@@ -7,7 +7,7 @@ I created an interactive calculator for the Black Scholes model designed to let 
 
 The chart section allows the user to hold all variables constant except one to explore how that variable affects pricing in isolation. The user can select which variable to vary using the drop-down menu (volatility, expiration date and underlying's price). Two graphs, one displaying option price vs quantity being varied and the other displaying the value of a Greek vs the quantity being varied (the Greek can be selected by the user using the drop-down menu), are displayed. An example of these graphs can be seen below. The sliders can be used to change which value the other variables are held constant at. 
 
-![](https://github.com/annaFlett/optionPricing/blob/main/images/blackscholes.png "Black Scholes Page")
+![](https://github.com/annaFlett/optionPricing/blob/main/images/blackScholes.png "Black Scholes Page")
 
 ## Monte Carlo Page
 
